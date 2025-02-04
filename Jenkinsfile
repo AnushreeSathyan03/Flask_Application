@@ -4,7 +4,7 @@ pipeline {
     environment {
         VENV_DIR = 'venv'
         FLASK_APP = 'app.py'
-        REPO_URL = 'https://github.com/your-username/flask-app.git'
+        REPO_URL = 'https://github.com/AnushreeSathyan03/Flask_Application.git'
     }
 
     stages {
@@ -64,7 +64,7 @@ pipeline {
             steps {
                 script {
                     bat '''
-                    curl http://127.0.0.1:8000
+                    curl http://127.0.0.1:5000
                     '''
                 }
             }
